@@ -4,12 +4,14 @@ de gebruiker te berekenen en een boodschap te geven afhankelijk
 van zijn leeftijd. Gemaakt door Maarten Lambour
 """
 
+naam = input("Hoe heet je: ")
+geboortejaar = int(input("Wat is je geboortejaar?: "))
 JAAR = 2025
 
 #Deze functie berekent de leeftijd o.b.v. het geboortejaar
-def ber_leeftijd(JAAR, geboortejaar):
+def leeftijd(JAAR, geboortejaar):
     leeftijd = JAAR-geboortejaar
-    return leeftijd
+    return(leeftijd)
 
 #Deze functie bepaalt een boodschap o.b.v. de leeftijd
 def boodschap_leeftijd(leeftijd):
@@ -19,16 +21,15 @@ def boodschap_leeftijd(leeftijd):
         boodschap = "Je bent nog lang niet toe aan pensioen."
     return boodschap
 
-#De hoofdfunctie drukt het resultaat af van de leeftijd en boodschap
-def main():
-    voornaam = input("Hoe heet je? ")
-    geboortejaar = int(input("Wat is je geboortejaar? "))
-    leeftijd = ber_leeftijd(JAAR, geboortejaar)
-    print(f"Beste {voornaam}, in {JAAR+10} zal je leeftijd {leeftijd+10} zijn")
-    boodschap = boodschap_leeftijd(leeftijd)
-    print(boodschap)
+uitkomst_leeftijd = leeftijd(JAAR, geboortejaar)
+boodschap = boodschap_leeftijd(uitkomst_leeftijd)
+
+print(f"Beste {naam}, in 2018 zal je leeftijd {uitkomst_leeftijd} zijn. {boodschap}")
 
 
-if __name__ == "__main__":
-    main()
+
+
+
+
+
 

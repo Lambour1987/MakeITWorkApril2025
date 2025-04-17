@@ -8,8 +8,9 @@ print("Hallo", voornaam)
 #Vraag leeftijd en converteer naar integer
 leeftijd = int(input("Wat is je leeftijd: "))
 
-#Print leeftijd over 10 jaar
-print(voornaam, "Je leeftijd over 10 jaar is", leeftijd+10)
+#Bereken leeftijd over 10 jaar en print het resultaat
+leeftijd_toekomst = leeftijd+10
+print(f"Hallo {voornaam}, je leeftijd over 10 jaar is {leeftijd_toekomst}")
 
 print("Voer 3 getallen in: ")
 

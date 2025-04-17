@@ -16,4 +16,4 @@ x=25
 y=30
 som=optellen(x, y)
 
-print('de som van x en y is ',som)
+print('de som van x en y is',som)

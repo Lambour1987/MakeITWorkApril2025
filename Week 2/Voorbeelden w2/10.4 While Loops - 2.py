@@ -2,7 +2,7 @@
 
 doorgaan = input('Wil je strafregels laten schrijven? (ja/nee) ')
 while (doorgaan == 'ja'):
-    aantal = int(input('Hoevel strafregels moet je schrijven? '))
+    aantal = int(input('Hoeveel strafregels moet je schrijven? '))
     zin = input('Welke strafregel moet je schrijven? ')
     for i in range(aantal):
         # print de strafregel het opgegeven aantal keer
