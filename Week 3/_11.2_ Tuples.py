@@ -13,7 +13,7 @@ for getal in fibonacci:
     print(getal)
 
 # tupel met twee items in de variabele 'vormen'
-vormen = ('circel', 'vierkant')
+vormen = ('cirkel', 'vierkant')
 print(f"Tuple: {vormen}")
 
 # de variabele vormen kan naar het type list worden gecast

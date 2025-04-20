@@ -6,9 +6,9 @@ i = 0
 
 print(f"De tafel van {tafel}:")
 
-for i in range(0,10):
-    print(i, end='')
-    for j in range (0,10):
+for i in range(2):
+    for j in range (5):
         i = i + 1
         totaal = i * tafel
-        print(totaal, end = "  ")
+        print(totaal, end = " ")
+    print(end = " " )

@@ -1,13 +1,7 @@
-def som(a,b):
-    som = a + b
-    return som
+antwoord = ""
 
-print(som(5,6))
+while antwoord != "nee":
+    antwoord = input("Wil je doorgaan? (ja/nee): ").lower()
+    print("Oké, we gaan verder!")
 
-def som(a,b):
-    som = a+b
-    print(som)
-
-som(7,8)
-
-
+print("Einde, je hebt 'nee' ingevoerd.")
