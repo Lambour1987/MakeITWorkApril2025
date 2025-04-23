@@ -1,7 +1,5 @@
 def toon_rij_sterren(aantal):
-    for ster in range(0,aantal):
-        print("*",end = " ")
+    for i in range(0,aantal):
+        print("*", end=" ")
 
-aantal = int(input("Geef het aantal sterren: "))
-
-toon_rij_sterren(aantal)
+toon_rij_sterren(8)

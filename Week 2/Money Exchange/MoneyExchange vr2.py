@@ -25,10 +25,7 @@ def Money_Exchange(valuta, vreemd_bedrag):
     kosten = round(transactiekosten(eur_bedrag,valuta),2)
     totaal = eur_bedrag + kosten
 
-
     print(f"Voor {vreemd_bedrag} {valuta} krijgt u {eur_bedrag} Euro.")
-    print(f"De transactiekosten bedragen {totaal} Euro.")
-
 
 def transactiekosten(eur_bedrag, valuta):
     transactiekosten = eur_bedrag*0.0015
@@ -45,3 +42,4 @@ valuta = int(input("1=US dollar, 2=GB pounds, 3=Yen "))
 vreemd_bedrag = int(input("In te wisselen bedrag (gehele getallen): "))
 
 Money_Exchange(valuta, vreemd_bedrag)
+print(f"De transactiekosten bedragen {totaal} Euro.")

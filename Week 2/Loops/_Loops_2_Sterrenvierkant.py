@@ -1,8 +1,8 @@
-def toon_sterren_vierkant(hoogte,breedte):
-    for i in range(hoogte):
-        for j in range(breedte):
-            print("*",end=" ")
-        print("\n")
+def toon_sterren_vierkant(aantal):
+    for i in range(0,aantal):
+        for j in range(0,aantal):
+            print("*", end = " ")
+        print("*")
 
+toon_sterren_vierkant(5)
 
-toon_sterren_vierkant(5,6)
