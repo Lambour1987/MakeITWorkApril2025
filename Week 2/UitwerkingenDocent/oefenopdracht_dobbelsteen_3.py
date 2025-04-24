@@ -59,4 +59,4 @@ waarde = 0
 # print de waarde van de dobbelsteen
 while waarde != 6:
     waarde = random.randrange(1, 7)
-    printdobbelsteen(waarde, oog)
+    toon_worp(waarde, oog)

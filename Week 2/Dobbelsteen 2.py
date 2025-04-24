@@ -15,25 +15,25 @@ else:
 
 
 def worp():
-aantalogen = int(input("Wat heb je gegooid met je dobbelsteen? "))
+    aantalogen = int(input("Wat heb je gegooid met je dobbelsteen? "))
 
-if aantalogen <1 or aantalogen >=7:
-    print("Ongeldige worp")
-if aantalogen == 1:
-    print("\n  k")
-elif aantalogen == 2:
-    print("\nk\n\n k")
-elif aantalogen == 3:
-    print("\nk\n","k\n"," k")
-elif aantalogen == 4:
-    print("\n k k\n","\n","k k")
-elif aantalogen == 5:
-    print("\nk k\n","k","\nk k")
-elif aantalogen == 6:
-    print("\nk k\nk k\nk k")
+    if aantalogen <1 or aantalogen >=7:
+        print("Ongeldige worp")
+    if aantalogen == 1:
+        print("\n  k")
+    elif aantalogen == 2:
+        print("\nk\n\n k")
+    elif aantalogen == 3:
+        print("\nk\n","k\n"," k")
+    elif aantalogen == 4:
+        print("\n k k\n","\n","k k")
+    elif aantalogen == 5:
+        print("\nk k\n","k","\nk k")
+    elif aantalogen == 6:
+        print("\nk k\nk k\nk k")
 
 
-
+worp()
 
 
 #def main()
