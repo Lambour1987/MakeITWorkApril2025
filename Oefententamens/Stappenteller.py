@@ -7,7 +7,7 @@
 #Lijst met dagen waarin te weinig is gelopen
 week_dagen = ["maandag","dinsdag","woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]
 week_dag_stappen = []
-te_weinig_stappen = []
+dagen_te_weinig_stappen = []
 
 #Constante met minimaal in te voeren stappen
 MINIMAAL_STAPPEN = 5000
@@ -32,20 +32,25 @@ while vraag_min_stap_per_dag<MINIMAAL_STAPPEN:
 #op de weekdagen de stappen per dag invoeren
 print("Voer het aantal stappen per dag in: ")
 for dag in week_dagen:
-    werk_stappen_per_dag = int(input(f"{dag}: "))
-    totaal_week_stappen = totaal_week_stappen + werk_stappen_per_dag
-    if werk_stappen_per_dag < vraag_min_stap_per_dag:
-        te_weinig_stappen = te_weinig_stappen.append(week_dagen)
-        print(te_weinig_stappen)
-    elif werk_stappen_per_dag > vraag_min_stap_per_dag:
-        print("Je hebt op alle dagen genoeg gelopen ga zo door! ")
-    kCal = verbrandt(totaal_week_stappen)
+    werkelijke_stappen_per_dag = int(input(f"{dag}: "))
+    totaal_week_stappen = totaal_week_stappen + werkelijke_stappen_per_dag
+    if werkelijke_stappen_per_dag < vraag_min_stap_per_dag:
+        dagen_te_weinig_stappen.append(dag)
+        #print(te_weinig_stappen)
 
 #Beoordeel of er voldoende stappen zijn gezet o.b.v. eigen input stappen per dag
-
 
 print()
 
 print(f"Je hebt deze week in totaal {totaal_week_stappen} stappen gelopen.")
+kCal = verbrandt(totaal_week_stappen)
 print(f"Je hebt hiermee {kCal} kCal verbrand")
-print(f"Je hebt te weinig stappen gelopen op ,{te_weinig_stappen}")
+
+#Beoordeel of er dagen zijn waarin te weinig is gelopen
+if len(dagen_te_weinig_stappen) > 0:
+    print("Je hebt te weinig gelopen op: " + ", ".join(dagen_te_weinig_stappen))
+else:
+    print("Je hebt op alle dagen genoeg gelopen, ga zo door!")
+
+
+
